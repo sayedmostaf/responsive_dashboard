@@ -4,6 +4,7 @@ import 'package:responsive_dashboard/widgets/custom_drawer.dart';
 import 'package:responsive_dashboard/widgets/dots_indicator.dart';
 import 'package:responsive_dashboard/widgets/my_card.dart';
 import 'package:responsive_dashboard/widgets/my_cards_page_view.dart';
+import 'package:responsive_dashboard/widgets/my_cards_section.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
@@ -23,10 +24,9 @@ class DashboardDesktopLayout extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        // Expanded(
-        //   child: MyCardsPageView(),
-        // ),
-        DotsIndicator(),
+        Expanded(
+          child: MyCardsSection(),
+        ),
       ],
     );
   }
